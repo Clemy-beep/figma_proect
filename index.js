@@ -1,9 +1,20 @@
 function showLogin() {
-    let registerbutton = document.getElementById('registerbutton');
-    console.log('aie');
-    registerbutton.addEventListener('click', function(e) {
+    $("#registerbutton").click(function(e) {
         e.preventDefault();
-        $('#loginForm').css('display', 'block');
-        $("#registerForm").css('display', 'none');
+        $("#registerForm").css("display", "none");
+        $("#loginForm").css("display", "flex");
+    });
+    $("#link").click(function(e) {
+        e.preventDefault();
+        $("#registerForm").css("display", "none");
+        $("#loginForm").css("display", "flex");
+    });
+}
+
+function showRegister() {
+    $("#link2").click(function(e) {
+        e.preventDefault();
+        $("#registerForm").css("display", "flex");
+        $("#loginForm").css("display", "none");
     });
 }
