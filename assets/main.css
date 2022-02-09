@@ -1,0 +1,53 @@
+body {
+    background-image: url(../assets/images/illus.png);
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: 100%;
+    background-position-x: -200px;
+    background-position-y: -150px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1 {
+    font-weight: 500;
+    color: #6D6D6D;
+    line-height: 42px;
+    text-align: center;
+}
+
+#form {
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    width: fit-content;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    ;
+}
+
+label {
+    display: block;
+    color: #6d6d6d;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+input {
+    display: block;
+    color: #6d6d6d;
+    height: 54px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+input[type="submit"] {
+    
+}
+
+#rules {
+    font-size: 12px;
+}
