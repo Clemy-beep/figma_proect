@@ -5,31 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="assets/styles/googleicons.css">
     <title>Inscription</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
 </head>
 
 <body>
-    <form action="">
+    <img src="./assets/images/logoBlancComplet.png" alt="dentilo logo">
+    <form action="#" id="registerForm">
         <div id="form">
             <h1>Inscription</h1>
-            <label for="pseudo">Pseudo</label>
-            <input type="text" name="pseudo" id="pseudo" placeholder="Placeholder text...">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Placeholder text...">
-            <label for="profession">Vous êtes...</label>
-            <select name="profession" id="profession">
-                <option value="Chirurgien Dentiste" default>Chirurgien Dentiste</option>
-                <option value="Etudiant">Etudiant</option>
-                <option value="Implantologue">Implantologue</option>
-            </select>
-            <label for="Password">Mot de passe</label>
-            <input type="password" name="password" id="password" placeholder="Placeholder text...">
-            <p id="rules">8 caractères minimum, un caractère spécial, une majuscule</p>
-            <input type="submit" value="S'inscrire" onsubmit="showLogin()">
+            <div id="pseudo">
+                <label for="pseudo">Pseudo</label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="Placeholder text...">
+            </div>
+            <div id="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Placeholder text...">
+            </div>
+            <div id="profession">
+                <label for="profession">Vous êtes...</label>
+                <select name="profession" id="profession">
+                    <option value="Chirurgien Dentiste" default>Chirurgien Dentiste</option>
+                    <option value="Etudiant">Etudiant</option>
+                    <option value="Implantologue">Implantologue</option>
+                </select>
+            </div>
+            <div id="password">
+                <label for="Password">Mot de passe</label>
+                <input type="password" name="password" id="password" placeholder="Placeholder text...">
+                <p id="rules">8 caractères minimum, un caractère spécial, une majuscule</p>
+            </div>
+            <input type="submit" id="registerbutton" value="S'inscrire">
             <p>Déjà un compte ? <span onclick="showLogin()">Connectez-vous</span></p>
         </div>
 
+    </form>
+    <form action="" id="loginForm">
+        <div id="form">
+            <h1>Connexion</h1>
+            <div id="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Placeholder text...">
+            </div>
+            <div id="password">
+                <label for="Password">Mot de passe</label>
+                <input type="password" name="password" id="password" placeholder="Placeholder text...">
+            </div>
+            <input type="submit" value="Se connecter" onsubmit="goHome()">
+            <p>Pas encore de compte ? <span onclick="goHome()">Inscrivez-vous</span></p>
+        </div>
     </form>
 </body>
 
