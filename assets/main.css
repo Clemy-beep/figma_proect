@@ -6,16 +6,18 @@
 body {
     background-image: url(../assets/images/illus.png);
     background-repeat: no-repeat;
-    background-size: 64vw 120vh;
+    background-size: 1500px 120vh;
     background-position-x: -200px;
     background-position-y: -100px;
+    overflow: hidden;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80vw;
     height: 100vh;
     align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 img {
@@ -38,12 +40,12 @@ span {
 
 #registerForm,
 #loginForm {
+    margin-right: 15%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     background-color: white;
-    width: fit-content;
     padding: 24px;
     border-radius: 16px;
     box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.35);
@@ -64,12 +66,12 @@ select,
 button {
     background-color: white;
     color: #6d6d6d;
-    height: 54px;
+    height: 44px;
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 8px;
     width: clamp(200px, 464px, 464px);
-    padding: 16px
+    padding-left: 16px;
 }
 
 button {
@@ -89,4 +91,42 @@ span {
 #rules {
     font-size: 12px;
     color: #828282
+}
+
+@media(max-width:1100px) {
+    body {
+        background-image: url(./images/Background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100vw 100%;
+        background-position-x: 0px;
+        background-position-y: 0px;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    #registerForm,
+    #loginForm {
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100vw - 124px);
+        margin-bottom: 36px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    label {
+        font-size: 18px;
+    }
+    #rules {
+        font-size: 0.5em;
+    }
+    p,
+    span {
+        font-size: 12px;
+    }
+    input,
+    select,
+    button {
+        width: 100%;
+    }
 }
