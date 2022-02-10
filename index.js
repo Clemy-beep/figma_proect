@@ -45,3 +45,11 @@ function showRegister() {
     });
 
 }
+
+function goHome() {
+    $("#loginButton").click(function(e) {
+        e.preventDefault();
+        console.log("vouh");
+        window.location.href = "http://forum.co/views/home.php";
+    });
+}

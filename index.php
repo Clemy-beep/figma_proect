@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="assets/styles/googleicons.css">
     <title>Inscription</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js"></script>
 
 </head>
 
@@ -29,14 +28,14 @@
         <div id="profession">
             <label for="profession">Vous êtes...</label>
             <select name="profession" id="profession">
-                        <option value="Chirurgien Dentiste" default>Chirurgien Dentiste</option>
-                        <option value="Etudiant">Etudiant</option>
-                        <option value="Implantologue">Implantologue</option>
-                    </select>
+                <option value="Chirurgien Dentiste" default>Chirurgien Dentiste</option>
+                <option value="Etudiant">Etudiant</option>
+                <option value="Implantologue">Implantologue</option>
+            </select>
         </div>
         <div id="password">
             <label for="Password">Mot de passe</label>
-            <input type="password" name="password" id="password" placeholder="Placeholder text...">
+            <input type="text" name="password" id="password" placeholder="Placeholder text...">
             <p id="rules">8 caractères minimum, un caractère spécial, une majuscule</p>
         </div>
         <button id="registerbutton" onclick="showLogin()">S'inscrire</button>
@@ -51,12 +50,13 @@
         </div>
         <div id="password">
             <label for="Password">Mot de passe</label>
-            <input type="password" name="password" id="password" placeholder="Placeholder text...">
+            <input type="text" name="password" id="password" placeholder="Placeholder text...">
         </div>
-        <button id="loginButton" onsubmit="goHome()">Se connecter</button>
+        <button id="loginButton" onclick="goHome()">Se connecter</button>
         <p>Pas encore de compte ? <span id="link2" onclick="showRegister()">Inscrivez-vous</span></p>
     </form>
 
 </body>
+<script src="index.js"></script>
 
 </html>

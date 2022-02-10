@@ -1,0 +1,142 @@
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: -8px;
+    height: 64px;
+    align-items: center;
+}
+
+.main-header {
+    background-color: #03B6F0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+a:hover {
+    color: #e5e5e5;
+}
+
+nav {
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 3%;
+    gap: 1em;
+    align-items: center;
+}
+
+nav ul img {
+    height: 50px;
+    width: 50px;
+    clip-path: ellipse(50% 50%);
+}
+
+img {
+    height: 50px;
+    width: 170px;
+    align-self: center;
+}
+
+#mob_logo {
+    display: none;
+}
+
+#btn {
+    background-color: #03B6F0;
+    border-radius: 32px;
+    padding: 0.5em;
+    height: 50px;
+    width: fit-content;
+    align-self: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3%;
+    font-size: 17px;
+    border: 2.5px solid white;
+}
+
+#btn:hover {
+    border: 3.5px solid white;
+    color: #03B6F0;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/*fin header */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.container-fav {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border: 2.5px solid black;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.material-icons,
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 44px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+@media (max-width: 880px) {
+    #profile {
+        height: 44px;
+        width: 44px;
+    }
+    .material-icons,
+    .material-icons-outlined {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 700px) {
+    button #buttonText {
+        display: none;
+    }
+    button {
+        width: fit-content;
+    }
+    #pc_logo {
+        aspect-ratio: 2/1;
+    }
+}
