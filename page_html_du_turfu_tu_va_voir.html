@@ -13,7 +13,7 @@
 
 <body>
     <form action="#">
-        <!-- <div class="info">
+        <div class="info">
             <h1>Informations du patient</h1>
             <div class="info-form">
                 <div class="patient">
@@ -69,21 +69,21 @@
                             </div>
                         </div>
                         <div class="rassemblement">
-                            <div>
+                            <div class="div">
                                 <input type="text" name="" placeholder="Placeholder text..">
                                 <span id="icon-add" class="material-icons-outlined">
                                     add_circle
                                 </span>
                             </div>
                             <label for="traitement">Traitement en cours</label>
-                            <div>
+                            <div class="div">
                                 <input type="text" name="traitement" placeholder="Placeholder text...">
                                 <span id="icon-add" class="material-icons-outlined">
                                     add_circle
                                 </span>
                             </div>
                             <label for="allergies">Allergies</label>
-                            <div>
+                            <div class="div">
                                 <input type="text" name="allergies" placeholder="Placeholder text...">
                                 <span id="icon-add" class="material-icons-outlined">
                                     add_circle
@@ -97,9 +97,9 @@
                     <input type="text" name="motif" placeholder="Placeholder text...">
                 </div>
             </div>
-        </div> -->
+        </div> 
 
-        <!-- <div class="examen">
+        <div class="examen">
             <h1>examen clinique</h1>
             <div class="form-exam">
                 <p class="texte">Ajoutez des photos</p>
@@ -202,8 +202,188 @@
                 </div>
 
             </div>
-        </div> -->
+        </div>
 
+        <div class="diagnostic">
+            <h1>Diagnostic</h1>
+            <div class="form-diagnostic">
+                <div class="description-diagnostic">
+                    <label for="description-diagnostic">Description</label>
+                    <textarea name="description-diagnostic" placeholder="Placeholder text..." cols="30" rows="10"></textarea>
+                </div>
+                <div class="pathologies">
+                    <label for="pathologies">Ajouter une ou plusieurs pathologies</label>
+                    <div class="ajout-search">
+                        <input type="text" name="pathologies" placeholder="search">
+                        <span id="icon-add" class="material-icons-outlined">
+                            add_circle
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categorie">
+            <h1>Catégorie de la pathologie</h1>
+            <div class="form-categorie">
+                <div class="description-categorie">
+                    <label for="description-categorie">Description</label>
+                    <textarea name="description-categorie" placeholder="Placeholder text..." cols="30" rows="10"></textarea>
+                </div>
+                <div class="medicaments">
+                    <label for="medicament">Médicaments adminiostrés et posologies</label>
+                    <div class="ajout-search">
+                        <input type="text" name="medicament" placeholder="Placeholder text...">
+                        <span id="icon-add" class="material-icons-outlined">
+                            add_circle
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="traitement">
+            <h1>Plan de traitement</h1>
+            <div class="form-traitement">
+                <p>Décrire étape par étape le plan de traitement effectué</p>
+
+                <h5>Étape 1</h5>
+                <div class="etape1">
+                    <div class="description-traitement">
+                        <label for="description-etape1">Description</label>
+                        <textarea name="description-etape1" placeholder="Placeholder text..." cols="30"
+                            rows="10"></textarea>
+                    </div>
+                    <div class="photo-etape1">
+                        <p>Lier une photo</p>
+                        <div id="photo-traitement" class="icons-add-photo">
+                            <span id="add-photo" class="material-icons-outlined">
+                                add_a_photo
+                            </span>
+                            <p class="photo-txt">Ajouter des photos</p>
+                        </div>
+                    </div>
+                </div>
+                <h5>Étape 2</h5>
+                <div class="etape2">
+                    <div class="description-traitement">
+                        <label for="description-etape2">Description</label>
+                        <textarea name="description-etape2" placeholder="Placeholder text..." cols="30"
+                            rows="10"></textarea>
+                    </div>
+                    <div class="photo-etape2">
+                        <p>Lier une photo</p>
+                        <div id="photo-traitement" class="icons-add-photo">
+                            <span id="add-photo" class="material-icons-outlined">
+                                add_a_photo
+                            </span>
+                            <p class="photo-txt">Ajouter des photos</p>
+                        </div>
+                    </div>
+                </div>
+                <h5>Étape 3</h5>
+                <div class="etape3">
+                    <div class="description-traitement">
+                        <label for="description-etape3">Description</label>
+                        <textarea name="description-etape3" placeholder="Placeholder text..." cols="30"
+                            rows="10"></textarea>
+                    </div>
+                    <div  class="photo-etape3">
+                        <p>Lier une photo</p>
+                        <div id="photo-traitement" class="icons-add-photo">
+                            <span id="add-photo" class="material-icons-outlined">
+                                add_a_photo
+                            </span>
+                            <p class="photo-txt">Ajouter des photos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ajout-traitement">
+                    <span id="icon-add" class="material-icons-outlined">
+                        add_circle
+                    </span>
+                    <h6>Ajouter une étape</h6>
+                </div>
+            </div>
+        </div>
+        <div class="evolution">
+            <h1>Evolution</h1>
+            <div class="form-evolution">
+                <div class="description-evolution">
+                    <label for="description-evolution">Description</label>
+                    <textarea name="description-evolution" placeholder="Placeholder text..." cols="30"
+                        rows="10"></textarea>
+                </div>
+                <div class="add-photo-evolution">
+                    <label for="add-photo-evolution">Ajoutez des photos</label>
+                    <div class="flex-photo">
+
+                        <div id="photo-evolution" class="icons-add-photo">
+                            <span id="add-photo" class="material-icons-outlined">
+                                add_a_photo
+                            </span>
+                            <p class="photo-txt">Ajouter des photos</p>
+                        </div>
+                        <div id="photo-evolution" class="icons-add-photo">
+                            <span id="add-photo" class="material-icons-outlined">
+                                add_a_photo
+                            </span>
+                            <p class="photo-txt">Ajouter des photos</p>
+                        </div>
+                        <div id="photo-evolution" class="icons-add-photo">
+                            <span id="add-photo" class="material-icons-outlined">
+                                add_a_photo
+                            </span>
+                            <p class="photo-txt">Ajouter des photos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conclusion">
+            <h1>Conclusion</h1>
+            <div class="form-conclusion">
+                <div class="description-conclusion">
+                    <label for="description-conclusion">Description</label>
+                    <textarea name="description-conclusion" placeholder="Placeholder text..." cols="30"
+                        rows="10"></textarea>
+                </div>
+            </div>
+        </div> 
+        <div class="ajout">
+            <h1>Ajouter votre cas clinique</h1>
+            <div class="form-ajout">
+                <div class="title">
+                    <label for="title">Titre du cas</label>
+                    <input type="text" name="title" placeholder="Placeholder text...">
+                </div>
+                <div class="resume">
+                    <label for="resume">Résumé</label>
+                    <textarea name="resume" placeholder="Placeholder text..." cols="30" rows="10"></textarea>
+                </div>
+                <div class="mots-cles">
+                    <label for="mots-cles">Mots clés</label>
+                    <div class="ajout-mots-cles">
+                        <input type="text" name="mots-cles" placeholder="Placeholder text..">
+                        <span  id="icon-add" class="material-icons-outlined">
+                            add_circle
+                        </span>
+                    </div>
+                </div>
+                <div class="specialites">
+                    <label for="specialites">Spécialités</label>
+                    <div class="ajout-specialites">
+                        <select name="specialites">
+                            <option value="">Select...</option>
+                        </select>
+                        <span id="icon-add" class="material-icons-outlined">
+                            add_circle
+                        </span>
+                    </div>
+                </div>
+                <input type="submit" class="submit" value="AJOUTER LE CAS CLINIQUE">
+            </div>
+        </div>
+        
     </form>
 </body>
 
