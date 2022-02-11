@@ -30,6 +30,64 @@
             </ul>
         </div>
     </div>
+    <h1 class="home-title"><span class="material-icons-outlined">sms</span>Sujets de discussion</h1>
+    <div id="carousel">
+        <div class="photo-chat">
+            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+            <div class="photo-container">Photo</div>
+            <div class="photo-messages">13</div>
+        </div>
+        <div class="photo-chat">
+            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+            <div class="photo-container">Photo</div>
+            <div class="photo-messages">13</div>
+        </div>
+        <div class="photo-chat">
+            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+            <div class="photo-container">Photo</div>
+            <div class="photo-messages">13</div>
+        </div>
+        <div class="photo-chat">
+            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+            <div class="photo-container">Photo</div>
+            <div class="photo-messages">13</div>
+        </div>
+        <div class="photo-chat">
+            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+            <div class="photo-container">Photo</div>
+            <div class="photo-messages">13</div>
+        </div>
+        <div class="photo-chat">
+            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+            <div class="photo-container">Photo</div>
+            <div class="photo-messages">13</div>
+        </div>
+        <div class="photo-chat">
+            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+            <div class="photo-container">Photo</div>
+            <div class="photo-messages">13</div>
+        </div>
+        <div class="photo-chat">
+            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+            <div class="photo-container">Photo</div>
+            <div class="photo-messages">13</div>
+        </div>
+        <div class="photo-chat">
+            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+            <div class="photo-container">Photo</div>
+            <div class="photo-messages">13</div>
+        </div>
+        <div class="photo-chat">
+            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+            <div class="photo-container">Photo</div>
+            <div class="photo-messages">13</div>
+        </div>
+        <div class="photo-chat">
+            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+            <div class="photo-container">Photo</div>
+            <div class="photo-messages">13</div>
+        </div>
+    </div>
 </body>
 <script src="../js/home.js"></script>
 

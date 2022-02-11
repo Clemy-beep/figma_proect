@@ -72,7 +72,6 @@
 }
 
 #menu {
-    width: 30vw;
     min-height: 100vh;
     background-color: white;
 }
@@ -122,16 +121,68 @@
 }
 
 #menu-items li .material-icons-outlined,
-#menu-header .material-icons-outlined {
+#menu-header .material-icons-outlined,
+.home-title .material-icons-outlined {
     font-size: 24px;
     font-weight: 300;
     cursor: pointer;
     align-self: center;
 }
 
+#carousel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-around;
+    padding: 0 4em;
+}
+
+.photo-chat {
+    height: 12em;
+    width: 8em;
+    background-color: #D5E7EC;
+    position: relative;
+    border-radius: 16px;
+}
+
+.photo-chat .profile {
+    clip-path: ellipse(50% 50%);
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+}
+
+.photo-container {
+    line-height: 193px;
+    text-align: center;
+}
+
+.photo-messages {
+    clip-path: ellipse(50% 50%);
+    height: 32px;
+    width: 32px;
+    background-color: #03B6F0;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 32px;
+}
+
 #close {
     cursor: pointer;
     padding-left: 1.5em;
+}
+
+.home-title {
+    font-size: 1.5rem;
+    color: #03B6F0;
+    margin-bottom: 2em;
 }
 
 @media (max-width: 1200px) {

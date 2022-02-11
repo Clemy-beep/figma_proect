@@ -1,6 +1,7 @@
 function showMenu() {
     $('#categories').click(function(e) {
         e.preventDefault();
+        $('#menu').css('width', '30vw');
         $('#overlay-menu').css('visibility', "visible");
     });
 }
@@ -8,7 +9,9 @@ function showMenu() {
 function closeMenu() {
     $('#close').click(function(e) {
         e.preventDefault();
-        $('#overlay-menu').css('visibility', "hidden");
+        $("#menu").animate({ width: 0 }, 350, function() {
+            $('#overlay-menu').css('visibility', "hidden");
+        });
     });
 }
 
@@ -61,3 +64,5 @@ function closeUnderMenu() {
         });
     });
 }
+
+jqSlic
