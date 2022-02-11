@@ -32,7 +32,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    margin-left: 3%;
+    margin-left: 1em;
     gap: 1em;
     align-items: center;
 }
@@ -123,9 +123,8 @@ h1 {
         height: 44px;
         width: 44px;
     }
-    .material-icons,
-    .material-icons-outlined {
-        font-size: 44px;
+    nav ul {
+        margin-left: 0;
     }
 }
 
@@ -138,5 +137,30 @@ h1 {
     }
     #pc_logo {
         aspect-ratio: 2/1;
+    }
+}
+
+@media (max-width: 500px) {
+    #pc_logo {
+        display: none;
+    }
+    #mob_logo {
+        display: block;
+        height: 100%;
+        aspect-ratio: 1/1;
+        width: 5em;
+    }
+}
+
+@media(max-width: 420px) {
+    #categories span {
+        display: none;
+    }
+    #categories::after {
+        content: "Categories";
+        font-size: 14px;
+    }
+    #searchInput {
+        width: 60%;
     }
 }
