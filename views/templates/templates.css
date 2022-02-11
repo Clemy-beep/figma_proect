@@ -113,9 +113,8 @@
     
     .container-fav {
         display: flex;
-        height: 700px;
+        height: 50vh;
         width: 1500px;
-        border: 2.5px solid black;
         margin: auto;
     }
     
@@ -128,21 +127,64 @@
     }
     
     .top-fav {
-        border-radius: 25px 25px 0px 0px;
-        height: 50%;
+        position: relative;
+        margin: auto;
+    }
+    
+    .top-fav img {
         width: 100%;
-        border: 1px solid #03B6F0;
+        height: 100%;
+        border-radius: 25px 25px 0px 0px;
+    }
+    
+    .top-fav button {
+        position: absolute;
+        bottom: 5%;
+        height: 5%;
+        left: 2%;
+        font-size: 0.7em;
+    }
+    
+    .cat {
+        border: none;
+        color: white;
+        background-color: #03B6F0;
+        cursor: pointer;
+    }
+    
+    .cat:hover {
+        border: none;
+        color: #03B6F0;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+    #etoile {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        background-color: #03B6F0;
+        border-radius: 0px 25px 0px 0px;
+        height: auto;
+        width: 10%;
+        padding: 5px;
     }
     
     .category li {
         list-style: none;
     }
     
-    .favori p {
+    .patient {
         font-size: 12px;
         margin-top: 10%;
         text-align: left;
         text-justify: auto;
+        padding-left: 1.5%;
+    }
+    
+    h3 {
+        font-size: 16px;
+        padding-left: 1.5%;
     }
     
     .profil-fav {
@@ -151,8 +193,34 @@
         clip-path: ellipse(50% 50%);
         border: 2px solid #03B6F0;
         border-radius: 50%;
+        margin-top: 5%;
+        margin-left: 1.5%;
+    }
+    /* photo + info */
+    
+    .informations {
+        display: inline-block;
     }
     
-    .information {
-        margin-top: -100px;
+    .icons {
+        display: inline;
+        margin-left: 20%;
+    }
+    
+    h5 {
+        font-size: 13px;
+        padding: 5%;
+    }
+    
+    h4 {
+        font-size: 10px;
+    }
+    
+    .material-icons.blue {
+        color: #03B6F0;
+    }
+    
+    .chicot {
+        height: 25px;
+        width: 18px;
     }
