@@ -32,60 +32,201 @@
     </div>
     <h1 class="home-title"><span class="material-icons-outlined">sms</span>Sujets de discussion</h1>
     <div id="carousel">
-        <div class="photo-chat">
-            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-            <div class="photo-container">Photo</div>
-            <div class="photo-messages">13</div>
+        <div class="carousel-button" id="prev-button">
+            <span class="material-icons-outlined">chevron_left</span>
         </div>
-        <div class="photo-chat">
-            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-            <div class="photo-container">Photo</div>
-            <div class="photo-messages">13</div>
+        <div id="carousel-items">
+            <div class="photo-chat" id="discussion-display">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">45</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">10</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">8</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
+            <div class="photo-chat">
+                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                <div class="photo-container">Photo</div>
+                <div class="photo-messages">13</div>
+            </div>
         </div>
-        <div class="photo-chat">
-            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-            <div class="photo-container">Photo</div>
-            <div class="photo-messages">13</div>
+        
+        <div class="carousel-button" id="next-button">
+            <span class="material-icons-outlined">chevron_right</span>
         </div>
-        <div class="photo-chat">
-            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-            <div class="photo-container">Photo</div>
-            <div class="photo-messages">13</div>
-        </div>
-        <div class="photo-chat">
-            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-            <div class="photo-container">Photo</div>
-            <div class="photo-messages">13</div>
-        </div>
-        <div class="photo-chat">
-            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-            <div class="photo-container">Photo</div>
-            <div class="photo-messages">13</div>
-        </div>
-        <div class="photo-chat">
-            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-            <div class="photo-container">Photo</div>
-            <div class="photo-messages">13</div>
-        </div>
-        <div class="photo-chat">
-            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-            <div class="photo-container">Photo</div>
-            <div class="photo-messages">13</div>
-        </div>
-        <div class="photo-chat">
-            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-            <div class="photo-container">Photo</div>
-            <div class="photo-messages">13</div>
-        </div>
-        <div class="photo-chat">
-            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-            <div class="photo-container">Photo</div>
-            <div class="photo-messages">13</div>
-        </div>
-        <div class="photo-chat">
-            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-            <div class="photo-container">Photo</div>
-            <div class="photo-messages">13</div>
+    </div>
+    <div id="modal-overlay">
+        <div id="discussion-modal">
+            <div id="discussion-messages">
+                <div id="messages-list">
+                    <div class="message">
+                        <div class="author">
+                            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                            <span class="name">Nikita </span><span class="time">9:05 Aujourd'hui</span>
+                        </div>
+                        <p class="message-text">Bonjour Romain. Je pense que vu l'avancée de l'infection, il faut extraire l'implant.</p>
+                    </div>
+                    <div class="message post-author">
+                        <div class="author">
+                            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                            <span class="name">Romain </span><span class="time">9:08 Aujourd'hui</span>
+                        </div>
+                        <p class="message-text">Bonjour Nikita, je m'en doutais mais je voulais confirmation. Merci.</p>
+                    </div> 
+                    <div class="message">
+                        <div class="author">
+                            <img class="profile " src="/assets/images/profil.jpg" alt="bg">
+                            <span class="name">Nikita </span><span class="time">9:010 Aujourd'hui</span>
+                        </div>
+                        <p class="message-text">Derien</p>
+                    </div> <div class="message">
+                        <div class="author">
+                            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
+                            <span class="name">Arthur </span><span class="time">9:05 Aujourd'hui</span>
+                        </div>
+                        <p class="message-text">Oui, séparation des deux couronnes, enlever l'implant en 37 et curetage pour bien nettoyer toute l'infection.</p>
+                    </div>
+                </div>
+                <div id="message-write">
+                    <textarea name="message" cols="30" rows="10">Laisser un commentaire...</textarea>
+                    <div id="send">
+                        <span class="material-icons-outlined">attach_file</span>
+                        <button>Envoyer <span class="material-icons-outlined">send</span> </button>
+                    </div>
+                </div>
+            </div>
+            <div id="disccussion-info">
+                <div id="radio">
+                    <span id="close-btn" class="material-icons-outlined">close</span>
+                </div>
+                <div id="infos">
+                    <div id="post-author">
+                        <div id="radio-bis"></div>
+                        <div id="author-infos">
+                            <img class="profile " src="/assets/images/profil.jpg" alt="bg">
+                            <span> <strong>Romain</strong> <br> Chirurgien Dentiste </span>
+                        </div>
+                    </div>
+                    <div id="history">
+                        <div class="title">
+                            <div class="divider"></div>
+                            <span>HISTORIQUE DU PATIENT</span>
+                            <div class="divider"></div>
+                        </div>
+                        <div id="history-content">
+                            <div id="sex-age">
+                                <img class="icon" src="../assets/images/user-large-solid.svg" alt=""><br>
+                                <span id="sex">Homme</span>
+                                <span id="age">57ans</span>
+                            </div>
+                            <div id="drugs">
+                                <img class="icon" src="../assets/images/drugs.svg" alt=""><br>
+                                <span id="cigs">Non fumeur</span>
+                                <span id="alcohol">Alcool occasionnel</span>
+                            </div>
+                            <div id="medics">
+                                <img id="medic" src="../assets/images/pills-solid.svg" alt=""><br>
+                                <span id="allergy">Aucune allergie</span>
+                                <span id="medic-hist">Aucun antécédent</span>
+                            </div>
+                            <div id="motive">
+                                <img id="form" src="../assets/images/file-medical-solid.svg" alt=""><br>
+                                <span id="consult-motive">Contrôle de routine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="question">
+                        <div class="title">
+                            <div class="divider"></div>
+                            <span>QUESTION</span>
+                            <div class="divider"></div>
+                        </div>
+                        <div id="question-text">Le patient présente une péri-implantite en 37 mais pas de douleurs ni d'infections visibles en bouche. Quel traitement réaliser ?</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
