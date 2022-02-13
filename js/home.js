@@ -1,25 +1,21 @@
 function showMenu() {
-    $('#categories').click(function(e) {
-        e.preventDefault();
-        $('#menu').css('width', '30vw');
-        $('#overlay-menu').css('visibility', "visible");
-    });
+    // e.preventDefault();
+    $('#menu').css('width', '30vw');
+    $('#overlay-menu').css('visibility', "visible");
+
 }
 
 function closeMenu() {
-    $('#close').click(function(e) {
-        e.preventDefault();
-        $("#menu").animate({ width: 0 }, 350, function() {
-            $('#overlay-menu').css('visibility', "hidden");
-        });
+    //e.preventDefault();
+    $("#menu").animate({ width: 0 }, 350, function() {
+        $('#overlay-menu').css('visibility', "hidden");
     });
 }
 
-function changeText() {
-    $("#pathology").click(function(e) {
-        e.preventDefault();
-        $('#menu').fadeOut(function() {
-            $(`
+function changeText(e) {
+    //e.preventDefault();
+    $('#menu').fadeOut(function() {
+        $(`
             <div id="menu">
                 <div id="menu-header"> <span id="headertext">Pathologies</span><span class="material-icons-outlined" id="closebis" onclick="closeUnderMenu()">chevron_left</span></div>
                 <p class="menu-title">Traumatologie faciale</p>
@@ -42,15 +38,13 @@ function changeText() {
                 <p class="menu-title">Parodontopathies</p>
             </div>
             `).replaceAll("#menu");
-        });
     });
 }
 
 function closeUnderMenu() {
-    $("#closebis").click(function(e) {
-        e.preventDefault();
-        $('#menu').fadeOut(function() {
-            $(`  
+    e.preventDefault();
+    $('#menu').fadeOut(function() {
+        $(`  
             <div id="menu">
                 <div id="menu-header"> <span id="headertext">RECHERCHE PAR CATEGORIE</span><span class="material-icons-outlined" id="close" onclick="closeMenu()">chevron_left</span></div>
                 <ul id="menu-items">
@@ -61,8 +55,24 @@ function closeUnderMenu() {
                 </ul>
             </div>
             `).replaceAll('#menu');
-        });
     });
 }
 
-jqSlic
+$("#prev-button").click(function(e) {
+    var carousel = $('#carousel-items');
+    carousel.scrollLeft(carousel.scrollLeft() - 500);
+});
+
+$("#next-button").click(function(e) {
+    var carousel = $('#carousel-items');
+    carousel.scrollLeft(carousel.scrollLeft() + 500);
+});
+
+$("#discussion-display").click(function(e) {
+    e.preventDefault();
+    $("#modal-overlay").css("visibility", "visible");
+});
+
+$("#close-btn").click(function(e) {
+    $("#modal-overlay").css("visibility", "hidden");
+});
