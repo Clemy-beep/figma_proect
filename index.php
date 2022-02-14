@@ -52,7 +52,7 @@
             <label for="Password">Mot de passe</label>
             <input type="text" name="password" id="password" placeholder="Placeholder text...">
         </div>
-        <button id="loginButton" onclick="goHome()">Se connecter</button>
+        <button id="loginButton">Se connecter</button>
         <p>Pas encore de compte ? <span id="link2" onclick="showRegister()">Inscrivez-vous</span></p>
     </form>
 

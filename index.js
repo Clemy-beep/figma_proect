@@ -24,7 +24,7 @@ function showRegister() {
     });
 }
 
-function goHome() {
-    console.log("vouh");
+$("#loginButton").click(function(e) {
+    e.preventDefault();
     window.location.href = "http://forum.co/views/home.php";
-}
+});
