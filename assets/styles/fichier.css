@@ -1074,6 +1074,7 @@ h5 {
     }
 }
 
+
 .title-modal {
     background-color: var(--white);
     font-size: 1.3em;
@@ -1086,7 +1087,6 @@ h5 {
 .form-modal {
     background-color: var(--white);
 }
-
 
 /* The Close Button */
 

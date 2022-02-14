@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../assets/styles/templates/templates.css">
 </head>
 
-<body>    
+<body>
     <?php include '../views/templates/header.html'; ?>
     <form action="#">
         <div class="info">
@@ -34,7 +34,6 @@
                             <option value="1989">1989</option>
                             <option value="1990">1990</option>
                         </select>
-
                         <label for="fumeur">Fumeur</label>
                         <select name="fumeur">
                             <option value="occasionnel">Occasionnel</option>
@@ -48,7 +47,6 @@
                             <option value="masculin">Masculin</option>
                             <option value="feminin">Feminin</option>
                         </select>
-
                         <label for="alcool">Alcool</label>
                         <select name="alcool">
                             <option value="jamais">Jamais</option>
@@ -58,10 +56,8 @@
                     </div>
                 </div>
                 <div class="f-antecedent">
-
                     <div class="Antecedent">
                         <div class="paragraphe">
-
                             <p>Antécédents médicaux</p>
                             <div id="icons-delete">
                                 <p>Fibromialgie il y a 5 ans</p>
@@ -100,7 +96,6 @@
                 </div>
             </div>
         </div>
-
         <div class="examen">
             <h1>examen clinique</h1>
             <div class="form-exam">
@@ -178,7 +173,6 @@
                     </div>
                 </div>
                 <div class="checkbox-3">
-
                     <div class="checkbox">
                         <input type="checkbox" class="input-checkbox" name="scanner">
                         <label for="scanner">Scanner</label>
@@ -202,10 +196,8 @@
                     <label for="description">Description</label>
                     <textarea name="description" placeholder="Placeholder text..." cols="30" rows="10"></textarea>
                 </div>
-
             </div>
         </div>
-
         <div class="diagnostic">
             <h1>Diagnostic</h1>
             <div class="form-diagnostic">
@@ -248,7 +240,6 @@
             <h1>Plan de traitement</h1>
             <div class="form-traitement">
                 <p class="decrire-etape">Décrire étape par étape le plan de traitement effectué</p>
-
                 <h5>Étape 1</h5>
                 <div class="etape1">
                     <div class="description-traitement">
@@ -319,7 +310,6 @@
                 <div class="add-photo-evolution">
                     <label for="add-photo-evolution">Ajoutez des photos</label>
                     <div class="flex-photo">
-
                         <div id="photo-evolution" class="icons-add-photo">
                             <span id="add-photo" class="material-icons-outlined">
                                 add_a_photo
@@ -342,7 +332,6 @@
                 </div>
             </div>
         </div>
-
         <div class="conclusion">
             <h1>Conclusion</h1>
             <div class="form-conclusion">
@@ -387,15 +376,11 @@
                 <input type="submit" id="myBtn" class="submit" value="AJOUTER LE CAS CLINIQUE">
             </div>
         </div>
-
     </form>
-
-
     <div class="modal" id="myModal">
         <div class="modal-content">
             <span class="close">x</span>
             <form action="#" class="form-modal">
-
                 <h2 class="title-modal">Lignes directrices pour la publication</h2>
                 <p class="p-modal">.Supprimez tous informations d'identification du patient. Cela comprendra les noms, les dates, les
                     lieux,
@@ -418,23 +403,18 @@
     <script>
         // Get the modal
         var modal = document.getElementById('myModal');
-
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
-
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-
         // When the user clicks on the button, open the modal
         btn.onclick = function () {
             modal.style.display = "block";
         }
-
         // When the user clicks on <span> (x), close the modal
         span.onclick = function () {
             modal.style.display = "none";
         }
-
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
             if (event.target == modal) {
