@@ -1,5 +1,4 @@
-function showLogin(e) {
-    e.preventDefault();
+function showLogin() {
     $('#registerForm').animate({
         opacity: 0,
     }, {
@@ -12,8 +11,7 @@ function showLogin(e) {
     });
 }
 
-function showRegister(e) {
-    e.preventDefault();
+function showRegister() {
     $("#loginForm").animate({
         opacity: 0,
     }, {
@@ -26,8 +24,7 @@ function showRegister(e) {
     });
 }
 
-function goHome(e) {
-    e.preventDefault();
+function goHome() {
     console.log("vouh");
     window.location.href = "http://forum.co/views/home.php";
 }

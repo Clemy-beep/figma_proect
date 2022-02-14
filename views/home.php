@@ -14,216 +14,89 @@
 
 <body>
     <?php include './templates/header.html'; ?>
+    <?php include './templates/discussion-modal.html'; ?>
     <div id="searchbar">
         <button id="categories" onclick="showMenu()"><span>Toutes les catégories</span></button>
         <input type="text" name="search" id="searchInput" placeholder="Pathologie">
         <button id="searchLogo"><span class="material-icons-outlined">search</span></button>
     </div>
-    <div id="overlay-menu">
-        <div id="menu">
-            <div id="menu-header"> <span id="headertext">RECHERCHE PAR CATEGORIE</span><span class="material-icons-outlined" id="close" onclick="closeMenu()">chevron_left</span></div>
-            <ul id="menu-items">
-                <li id="pathology" onclick="changeText()">Pathologie<span id="pathology" class="material-icons-outlined">chevron_right</span></li>
-                <li>Traitement<span class="material-icons-outlined">chevron_right</span></li>
-                <li>Spécialité<span class="material-icons-outlined">chevron_right</span></li>
-                <li>Anatomie<span class="material-icons-outlined">chevron_right</span></li>
-            </ul>
-        </div>
-    </div>
+    <?php include './templates/menu.html'; ?>
     <h1 class="home-title"><span class="material-icons-outlined">sms</span>Sujets de discussion</h1>
-    <div id="carousel">
-        <div class="carousel-button" id="prev-button">
-            <span class="material-icons-outlined">chevron_left</span>
-        </div>
-        <div id="carousel-items">
-            <div class="photo-chat" id="discussion-display">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">45</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">10</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">8</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-            <div class="photo-chat">
-                <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                <div class="photo-container">Photo</div>
-                <div class="photo-messages">13</div>
-            </div>
-        </div>
-        
-        <div class="carousel-button" id="next-button">
-            <span class="material-icons-outlined">chevron_right</span>
-        </div>
-    </div>
-    <div id="modal-overlay">
-        <div id="discussion-modal">
-            <div id="discussion-messages">
-                <div id="messages-list">
-                    <div class="message">
-                        <div class="author">
-                            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                            <span class="name">Nikita </span><span class="time">9:05 Aujourd'hui</span>
-                        </div>
-                        <p class="message-text">Bonjour Romain. Je pense que vu l'avancée de l'infection, il faut extraire l'implant.</p>
-                    </div>
-                    <div class="message post-author">
-                        <div class="author">
-                            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                            <span class="name">Romain </span><span class="time">9:08 Aujourd'hui</span>
-                        </div>
-                        <p class="message-text">Bonjour Nikita, je m'en doutais mais je voulais confirmation. Merci.</p>
-                    </div> 
-                    <div class="message">
-                        <div class="author">
-                            <img class="profile " src="/assets/images/profil.jpg" alt="bg">
-                            <span class="name">Nikita </span><span class="time">9:010 Aujourd'hui</span>
-                        </div>
-                        <p class="message-text">Derien</p>
-                    </div> <div class="message">
-                        <div class="author">
-                            <img class="profile" src="/assets/images/profil.jpg" alt="bg">
-                            <span class="name">Arthur </span><span class="time">9:05 Aujourd'hui</span>
-                        </div>
-                        <p class="message-text">Oui, séparation des deux couronnes, enlever l'implant en 37 et curetage pour bien nettoyer toute l'infection.</p>
-                    </div>
+    <?php include './templates/carousel.html'; ?>
+    <h1 class="home-title"><span class="material-icons-outlined">medical_information</span>Cas cliniques</h1>
+    <select name="order" id="order-by">
+        <option value="date_asc">Tri par le plus récent</option>
+        <option value="date_desc">Tri par le plus ancien</option>
+        <option value="alph_asc">Tri par ordre alphabétique</option>
+    </select>
+    <div id="cases-container">
+        <div class="case">
+            <div class="top-part">
+                <img class="fav-icon" src="../assets/images/star-regular.svg" alt="fav-button">
+                <div class="tags">
+                    <div class="tag">Fumeur</div>
+                    <div class="tag">Parodontite</div>
+                    <div class="tag">Abcès</div>
                 </div>
-                <div id="message-write">
-                    <textarea name="message" cols="30" rows="10">Laisser un commentaire...</textarea>
-                    <div id="send">
-                        <span class="material-icons-outlined">attach_file</span>
-                        <button>Envoyer <span class="material-icons-outlined">send</span> </button>
+            </div>
+            <div class="bottom-part">
+                <span class="case-title">Abcès parodontal</span>
+                <span class="case-description">Un jeune patient de 38ans s’est présenté en consultation au service d’Odontologie chirurgicale du Centre de Consultation et de Traitements Dentaires du CHU Ibn Rochd de Casablanca, pour une tuméfaction endobuccale de la région prémolaire mandibulaire droite... </span>
+                <div class="author-comments">
+                    <div class="case-author">
+                        <img src="../assets/images/profil.jpg" alt="bg">
+                        <span class="case-author-name"> <strong>Mounia</strong> <br> Chirurgien Dentiste</span>
+                    </div>
+                    <div id="comments-rate">
+                        <span class="rate">3.6</span>
+                        <span class="comments">6</span>
                     </div>
                 </div>
             </div>
-            <div id="disccussion-info">
-                <div id="radio">
-                    <span id="close-btn" class="material-icons-outlined">close</span>
+        </div>
+        <div class="case">
+            <div class="top-part">
+                <img class="fav-icon" src="../assets/images/star-regular.svg" alt="fav-button">
+                <div class="tags">
+                    <div class="tag">Greffe</div>
+                    <div class="tag">Gencive</div>
                 </div>
-                <div id="infos">
-                    <div id="post-author">
-                        <div id="radio-bis"></div>
-                        <div id="author-infos">
-                            <img class="profile " src="/assets/images/profil.jpg" alt="bg">
-                            <span> <strong>Romain</strong> <br> Chirurgien Dentiste </span>
-                        </div>
+            </div>
+            <div class="bottom-part">
+                <span class="case-title">Greffe de gencive</span>
+                <span class="case-description">L’améloblastome est une tumeur odontogène, d’agressivité locale, avec un taux de transformation maligne très faible. Elle est néanmoins connue très récidivante après traitement. Il s’agit de la tumeur bénigne odontogène la plus fréquente dans les pays...</span>
+                <div class="author-comments">
+                    <div class="case-author">
+                        <img src="../assets/images/profil.jpg" alt="bg">
+                        <span class="case-author-name"> <strong>Arthur</strong> <br> Etudiant </span>
                     </div>
-                    <div id="history">
-                        <div class="title">
-                            <div class="divider"></div>
-                            <span>HISTORIQUE DU PATIENT</span>
-                            <div class="divider"></div>
-                        </div>
-                        <div id="history-content">
-                            <div id="sex-age">
-                                <img class="icon" src="../assets/images/user-large-solid.svg" alt=""><br>
-                                <span id="sex">Homme</span>
-                                <span id="age">57ans</span>
-                            </div>
-                            <div id="drugs">
-                                <img class="icon" src="../assets/images/drugs.svg" alt=""><br>
-                                <span id="cigs">Non fumeur</span>
-                                <span id="alcohol">Alcool occasionnel</span>
-                            </div>
-                            <div id="medics">
-                                <img id="medic" src="../assets/images/pills-solid.svg" alt=""><br>
-                                <span id="allergy">Aucune allergie</span>
-                                <span id="medic-hist">Aucun antécédent</span>
-                            </div>
-                            <div id="motive">
-                                <img id="form" src="../assets/images/file-medical-solid.svg" alt=""><br>
-                                <span id="consult-motive">Contrôle de routine</span>
-                            </div>
-                        </div>
+                    <div id="comments-rate">
+                        <span class="rate">4.8</span>
+                        <span class="comments">17</span>
                     </div>
-                    <div id="question">
-                        <div class="title">
-                            <div class="divider"></div>
-                            <span>QUESTION</span>
-                            <div class="divider"></div>
-                        </div>
-                        <div id="question-text">Le patient présente une péri-implantite en 37 mais pas de douleurs ni d'infections visibles en bouche. Quel traitement réaliser ?</div>
+                </div>
+            </div>
+        </div>
+        <div class="case">
+            <div class="top-part">
+                <img class="fav-icon" src="../assets/images/star-regular.svg" alt="fav-button">
+                <div class="tags">
+                    <div class="tag">Mâchoire</div>
+                    <div class="tag">Parodontite</div>
+                    <div class="tag">Extraction</div>
+                </div>
+            </div>
+            <div class="bottom-part">
+                <span class="case-title">Parodontie aïgue</span>
+                <span class="case-description">L’énucléation et l’exérèse de la lésion avaient été réalisées sous anesthésie locorégionale. En macroscopie, la pièce opération était ferme avec des contours irréguliers (Fig. 5). L’examen anathomopathologique de la lésio révélait la présence de tumeur...</span>
+                <div class="author-comments">
+                    <div class="case-author">
+                        <img src="../assets/images/profil.jpg" alt="bg">
+                        <span class="case-author-name"> <strong>Nikita</strong> <br> Implantologue</span>
+                    </div>
+                    <div id="comments-rate">
+                        <span class="rate">4.6</span>
+                        <span class="comments">13</span>
                     </div>
                 </div>
             </div>
@@ -231,5 +104,7 @@
     </div>
 </body>
 <script src="../js/home.js"></script>
+<script src="../js/carousel.js"></script>
+<script src="../js/menu.js"></script>
 
 </html>
