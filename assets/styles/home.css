@@ -304,12 +304,17 @@
     align-items: center;
     width: 99.99%;
     border-radius: 0px 0px 0px 16px;
+    justify-content: space-between;
+}
+
+#message-write textarea {
+    width: 80%;
 }
 
 #send {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #send button {

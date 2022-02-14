@@ -16,6 +16,10 @@
 
 <body>
     <?php include './templates/header.html' ?>
+    <div id="secondary-header">
+        <button class="header-btn" id="active">Publications</button>
+        <button class="header-btn">Discussion</button>
+    </div>
     <div id="user">
         <img src="../assets/images/profil.jpg" alt="bg">
         <div id="user-infos">
@@ -26,12 +30,18 @@
             </div>
             <span id="user-profession">Médecin</span>
             <div id="user-stats">
-                <span id="user-pub-num">15 cas publiés</span>
-                <span id="user-followers">56 abonnés</span>
+                <span id="user-pub-num"><span class="bold">15</span> cas publiés</span>
+                <span id="user-followers"> <span class="bold">56</span> abonnés</span>
             </div>
         </div>
     </div>
     <?php include './templates/cases.html' ?>
 </body>
-
+<script>
+    $('#logout').click(function (e) { 
+        e.preventDefault();
+        window.location.href = "http://forum.co/index.php";
+    });
+</script>
+<script src="../js/cases.js"></script>
 </html>

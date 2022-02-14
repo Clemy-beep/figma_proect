@@ -36,5 +36,6 @@
 <script src="../js/home.js"></script>
 <script src="../js/carousel.js"></script>
 <script src="../js/menu.js"></script>
+<script src="../js/cases.js"></script>
 
 </html>

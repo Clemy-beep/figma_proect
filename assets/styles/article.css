@@ -1,0 +1,57 @@
+* {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+#header-bis {
+    height: 64px;
+    margin: 0 -8px;
+    box-shadow: 0px 4px 4px 0px #00000025;
+    padding-bottom: 1.2em;
+}
+
+#article-author img {
+    height: 50px;
+    width: 50px;
+    clip-path: ellipse(50% 50%);
+}
+
+#article-miscs {
+    display: flex;
+    margin: 0 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#article-categories,
+#article-rate-num {
+    color: #6D6D6D;
+}
+
+#article-date {
+    margin-top: 1em;
+}
+
+.article-rate {
+    line-height: 46px;
+    background-image: url(../images/tooth-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    padding: 0.5em;
+    background-position: center center;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.tag {
+    background-color: #03B6F0;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 32px;
+}
+
+#article-date {
+    display: block;
+}
