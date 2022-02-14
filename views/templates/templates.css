@@ -55,7 +55,7 @@
         min-height: 8vh;
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 1%;
     }
     
     nav ul {
@@ -65,7 +65,7 @@
     }
     
     nav li {
-        padding-left: 30px;
+        padding-left: 10%;
     }
     
     nav ul img {
@@ -113,25 +113,28 @@
     
     .container-fav {
         display: flex;
-        height: 50vh;
-        width: 1500px;
+        height: 50%;
+        width: 100%;
         margin: auto;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     
     .favori {
-        height: 400px;
-        width: 300px;
+        height: 100%;
+        width: 15%;
         border: 1px solid #03B6F0;
-        margin: auto;
         border-radius: 25px;
+        margin: auto;
     }
     
     .top-fav {
         position: relative;
-        margin: auto;
+        margin-top: 0%;
     }
     
     .top-fav img {
+        margin-top: 0%;
         width: 100%;
         height: 100%;
         border-radius: 25px 25px 0px 0px;
@@ -150,6 +153,7 @@
         color: white;
         background-color: #03B6F0;
         cursor: pointer;
+        padding: 2%;
     }
     
     .cat:hover {
@@ -166,8 +170,6 @@
         background-color: #03B6F0;
         border-radius: 0px 25px 0px 0px;
         height: auto;
-        width: 10%;
-        padding: 5px;
     }
     
     .category li {
@@ -203,8 +205,8 @@
     }
     
     .icons {
-        display: inline;
-        margin-left: 20%;
+        margin: auto;
+        display: flex;
     }
     
     h5 {
@@ -223,4 +225,54 @@
     .chicot {
         height: 25px;
         width: 18px;
+    }
+    
+    span:hover {
+        transform: scale(1.5);
+    }
+    
+    .chicot:hover {
+        transform: scale(1.5);
+    }
+    
+    .profil-fav:hover {
+        transform: scale(1.2);
+    }
+    
+    .favori:hover {
+        transform: scale(1.1);
+    }
+    
+    .profil:hover {
+        transform: scale(1.3);
+    }
+    
+    .cat:hover {
+        transform: scale(1.3);
+        margin-left: 5%;
+    }
+    
+    .favori:hover {
+        cursor: pointer;
+    }
+    
+    @media (max-width: 1000px) {
+        .favori {
+            width: 65%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10%;
+            height: 100%;
+        }
+        .icons {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+    }
+    
+    #message {
+        height: 100%;
+        display: flex;
+        justify-content: center;
     }
