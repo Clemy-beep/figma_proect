@@ -840,3 +840,285 @@ h5 {
     text-decoration: none;
     cursor: pointer;
 }
+
+@media(max-width: 1000px) {
+    .info-form,
+    .form-exam,
+    .form-diagnostic,
+    .form-categorie,
+    .form-traitement,
+    .form-evolution,
+    .form-conclusion,
+    .form-ajout {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .rassemblement input {
+        width: 80%;
+        height: 80%;
+    }
+    select {
+        width: 100%;
+    }
+    .form-1 {
+        margin-right: 5%;
+    }
+    .form-1 label {
+        width: 10em;
+        font-size: 1em;
+    }
+    .form-2 {
+        margin-top: 11%;
+        width: 10em;
+        height: 10em;
+        font-size: 1em;
+    }
+    .form-2 label {
+        width: 10em;
+        font-size: 1em;
+    }
+    .photo {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5em;
+    }
+    .icons-photo {
+        width: 30%;
+    }
+    .icons-add-photo {
+        width: 30%;
+    }
+    h1 {
+        padding-left: 1em;
+        padding-bottom: .5em;
+        font-size: 1.5em;
+    }
+    .description {
+        margin-top: 20%;
+        height: 5%;
+    }
+    .description textarea {
+        width: 90%;
+    }
+    .photo-exam {
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5em;
+    }
+    .icons-add-photo .photo-txt {
+        margin-left: 20%;
+    }
+    .checkbox-3 {
+        margin-top: 13em;
+    }
+    .form-exam {
+        height: 80em;
+    }
+    .description-photo {
+        height: 70%;
+    }
+    .description-photo textarea {
+        width: 100%;
+    }
+    .description-other textarea {
+        width: 90%;
+    }
+    .form-diagnostic {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 25em;
+    }
+    .description-diagnostic {
+        margin-top: -10%;
+        width: 90%;
+    }
+    .pathologies {
+        margin-right: 0;
+        width: 100%;
+    }
+    .ajout-search {
+        height: 2em;
+    }
+    .pathologies label {
+        margin-top: -15%;
+    }
+    .ajout-search input {
+        height: 80%;
+        width: 80%;
+    }
+    .form-categorie {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 25em;
+    }
+    .description-categorie {
+        margin-top: -10%;
+        width: 90%;
+    }
+    .medicaments {
+        margin-right: 0;
+        width: 100%;
+    }
+    .ajout-search {
+        height: 2em;
+    }
+    .medicaments label {
+        margin-top: -15%;
+    }
+    .ajout-search input {
+        height: 80%;
+        width: 80%;
+    }
+    .form-traitement {
+        height: 50em;
+    }
+    .form-traitement .decrire-etape {
+        width: 95%;
+    }
+    .photo-etape1,
+    .photo-etape2,
+    .photo-etape3 {
+        margin-right: 3%;
+        margin-top: -7%;
+    }
+    .form-evolution {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 35em;
+    }
+    .description-evolution {
+        width: 90%;
+        margin-top: -20%;
+    }
+    .add-photo-evolution {
+        width: 95%;
+        margin-top: -20%;
+    }
+    #photo-evolution {
+        width: 100em;
+    }
+    .description-conclusion {
+        width: 90%;
+    }
+    .title {
+        width: 90%;
+    }
+    .title input {
+        width: 100%;
+    }
+    .resume {
+        width: 90%;
+    }
+    .resume textarea {
+        width: 100%;
+    }
+    .ajout-mots-cles input {
+        width: 80%;
+    }
+    .ajout-specialites {
+        width: 95%;
+    }
+    .submit {
+        width: 90%;
+        margin-left: 3%;
+    }
+}
+
+.submit:hover {
+    background-color: var(--second);
+    color: black;
+}
+
+
+/* form fini */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: var(--white);
+    margin: 5% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    /* Could be more or less, depending on screen size */
+}
+
+@media(max-width: 1000px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
+.title-modal {
+    background-color: var(--white);
+    font-size: 1.3em;
+    margin-bottom: 10%;
+    color: var(--main);
+    width: 80%;
+    margin-left: 8%;
+}
+
+.form-modal {
+    background-color: var(--white);
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.submit-modal {
+    width: 100%;
+    height: 3em;
+    background-color: var(--second);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.submit-modal:hover {
+    background-color: var(--main);
+    color: var(--white);
+}
+
+.p-modal {
+    margin-bottom: 2em;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
