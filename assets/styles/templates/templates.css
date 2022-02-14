@@ -1,25 +1,26 @@
 /* header */
 
-header {
+.main-header {
     display: flex;
     justify-content: space-between;
     margin: -8px;
-    height: 64px;
+    height: 70px;
     align-items: center;
-}
-
-.main-header {
     background-color: #03B6F0;
 }
 
-a {
+.navbar li a {
     color: #ffffff;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
 
-a:hover {
-    color: #e5e5e5;
+a {
+    text-decoration: none !important;
+}
+
+.navbar li a:hover {
+    color: #d3d3d3
 }
 
 nav {
@@ -43,7 +44,8 @@ nav ul img {
     clip-path: ellipse(50% 50%);
 }
 
-img {
+#pc_logo,
+#mob_logo {
     height: 50px;
     width: 170px;
     align-self: center;
@@ -53,7 +55,7 @@ img {
     display: none;
 }
 
-#btn {
+#btn-add #btn {
     background-color: #03B6F0;
     border-radius: 32px;
     padding: 0.5em;
@@ -92,30 +94,6 @@ h1 {
     border: 2.5px solid black;
     margin-top: 5%;
     margin-left: 5%;
-}
-
-.material-icons,
-.material-icons-outlined {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 44px;
-    /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-    /* Support for IE. */
-    font-feature-settings: 'liga';
 }
 
 @media (max-width: 880px) {
