@@ -9,9 +9,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/styles/googleicons.css" />
     <link rel="stylesheet" href="/assets/styles/fichier.css" />
+    <link rel="stylesheet" href="../assets/styles/templates/templates.css">
 </head>
 
-<body>
+<body>    
+    <?php include '../views/templates/header.html'; ?>
     <form action="#">
         <div class="info">
             <h1>Informations du patient</h1>
