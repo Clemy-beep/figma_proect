@@ -245,7 +245,7 @@
         <div class="traitement">
             <h1>Plan de traitement</h1>
             <div class="form-traitement">
-                <p>Décrire étape par étape le plan de traitement effectué</p>
+                <p class="decrire-etape">Décrire étape par étape le plan de traitement effectué</p>
 
                 <h5>Étape 1</h5>
                 <div class="etape1">

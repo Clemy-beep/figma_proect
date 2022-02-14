@@ -663,6 +663,106 @@ h5 {
   .description-other textarea{
     width: 90%;
   }
+  .form-diagnostic{
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25em;
+  }
+  .description-diagnostic {
+    margin-top: -10%;
+    width: 90%;
+  }
+  .pathologies {
+    margin-right: 0;
+    width: 100%;
+  }
+  .ajout-search{
+    height: 2em;
+  }
+  .pathologies label{
+    margin-top: -15%;
+  }
+  .ajout-search input{
+    height: 80%;
+    width: 80%;
+  }
+  .form-categorie{
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25em;
+  }
+  .description-categorie {
+    margin-top: -10%;
+    width: 90%;
+  }
+  .medicaments {
+    margin-right: 0;
+    width: 100%;
+  }
+  .ajout-search{
+    height: 2em;
+  }
+  .medicaments label{
+    margin-top: -15%;
+  }
+  .ajout-search input{
+    height: 80%;
+    width: 80%;
+  }
+  .form-traitement{
+    height: 50em;
+  }
+  .form-traitement .decrire-etape{
+    width: 95%;
+  }
+  .photo-etape1,
+  .photo-etape2,
+  .photo-etape3{
+    margin-right: 3%;
+    margin-top: -7%;
+  }
+  .form-evolution{
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 35em;
+  }
+  .description-evolution {
+    width: 90%;
+    margin-top: -20%;
+  }
+  
+  .add-photo-evolution{
+    width: 95%;
+    margin-top: -20%;
+  }
+  #photo-evolution{
+    width: 100em;
+  }
+  .description-conclusion{
+    width: 90%;
+  }
+  .title{
+    width: 90%;
+  }
+  .title input {
+    width: 100%;
+  }
+  .resume{
+    width: 90%;
+  }
+  .resume textarea{
+    width: 100%;
+  }
+  .ajout-mots-cles input{
+    width: 80%;
+  }
+  .ajout-specialites {
+    width: 95%;
+  }
+  .submit{
+    width: 90%;
+    margin-left: 3%;
+  }
 }
 .submit:hover{
   background-color: var(--second);
@@ -715,6 +815,7 @@ h5 {
   font-size: 28px;
   font-weight: bold;
   background-color: var(--white);
+  cursor: pointer;
 }
 .submit-modal {
   width: 100%;
