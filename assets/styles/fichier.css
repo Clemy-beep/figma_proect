@@ -9,7 +9,9 @@
   font-family: 'Roboto', sans-serif;
   background-color: var(--second);
 }
-
+form{
+  margin-bottom: 3%;
+}
 .info {
   display: flex;
   flex-direction: column;
@@ -40,6 +42,7 @@ textarea {
   padding-top: 1%;
   padding-left: 3%;
 }
+
 .form-1 {
   background-color: var(--white);
   display: flex;
@@ -76,6 +79,7 @@ select {
   border-radius: 7px;
   border: 1px solid rgba(0, 0, 0, 1);
   background-color: var(--white);
+  cursor: pointer;
 }
 .f-antecedent {
   margin-top: 5%;
@@ -126,6 +130,7 @@ select {
   font-size: 2em;
   vertical-align: middle;
   color: rgba(3, 182, 240, 1);
+  cursor: pointer;
 }
 #icons-delete {
   background-color: var(--white);
@@ -137,6 +142,7 @@ select {
 #rotate {
   background-color: var(--white);
   transform: rotate(45deg);
+  cursor: pointer;
 }
 /* fin information patient */
 
@@ -178,6 +184,7 @@ select {
   align-items: center;
   padding-top: 2%;
   margin-top: 2%;
+  cursor: pointer;
 }
 .icons-photo {
   height: 50%;
@@ -191,6 +198,7 @@ select {
   align-items: center;
   padding-top: 2%;
   margin-top: 2%;
+  cursor: pointer;
 }
 
 .photo-txt {
@@ -568,4 +576,163 @@ h5 {
   margin-left: 50%;
   margin-top: 2em;
   border-radius: 10px;
+  cursor: pointer;
+  color: var(--white);
+}
+@media(max-width: 1000px){
+  .info-form, .form-exam,
+  .form-diagnostic,
+  .form-categorie,
+  .form-traitement,
+  .form-evolution,
+  .form-conclusion,
+  .form-ajout
+  {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+  .rassemblement input{
+    width: 80%;
+    height: 80%;
+  }
+  select{
+    width: 100%;
+  }
+  .form-1{
+    margin-right: 5%;
+  }
+  .form-1 label{
+    width: 10em;
+    font-size: 1em;
+  }
+  .form-2 {
+    margin-top: 11%;
+    width: 10em;
+    height: 10em;
+    font-size: 1em;
+  }
+  .form-2 label{
+    width: 10em;
+    font-size: 1em;
+  }
+  .photo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+  }
+  .icons-photo{
+    width: 30%;
+  }
+  .icons-add-photo{
+    width: 30%;
+  }
+  h1{
+    padding-left: 1em;
+    padding-bottom: .5em;
+    font-size: 1.5em;
+  }
+  .description{
+    margin-top: 20%;
+    height: 5%;
+  }
+  .description textarea{
+    width: 90%;
+  }
+  .photo-exam{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+  }
+  .icons-add-photo .photo-txt{
+    margin-left: 20%;
+  }
+  .checkbox-3{
+    margin-top: 13em;
+  }
+  .form-exam{
+    height: 80em;
+  }
+  .description-photo {
+    height: 70%;
+  }
+  .description-photo textarea{
+    width: 100%;
+  }
+  .description-other textarea{
+    width: 90%;
+  }
+}
+.submit:hover{
+  background-color: var(--second);
+  color: black;
+}
+
+/* form fini */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: var(--white);
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+@media(max-width: 1000px){
+  .modal-content{
+    width: 80%;
+  }
+}
+.title-modal{
+  background-color: var(--white);
+  font-size: 1.3em;
+  margin-bottom: 10%;
+  color: var(--main);
+  width: 80%;
+  margin-left: 8%;
+}
+.form-modal{
+  background-color: var(--white);
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: var(--white);
+}
+.submit-modal {
+  width: 100%;
+  height: 3em;
+  background-color: var(--second);
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.submit-modal:hover{
+  background-color: var(--main);
+  color: var(--white);
+}
+.p-modal{
+  margin-bottom: 2em;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
