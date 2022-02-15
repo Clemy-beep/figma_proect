@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/styles/templates/templates.css">
     <link rel="stylesheet" href="../assets/styles/article.css">
     <link rel="stylesheet" href="../assets/styles/googleicons.css">
+    <link rel="stylesheet" href="../assets/styles/comment.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Article</title>
@@ -70,6 +71,7 @@
         <span id="patient-gender">Sexe : Homme</span>
         <ul id="patient-treatments">Traitements en cours : aucun</ul>
     </div>
+    <?php include 'Commentaires.php'; ?>
 </body>
 
 </html>
