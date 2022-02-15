@@ -12,7 +12,7 @@
 .navbar li a {
     color: #ffffff;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -23,21 +23,21 @@ a {
     color: #d3d3d3
 }
 
-nav {
+.navbar {
     display: flex;
     align-items: center;
     padding: 10px;
 }
 
-nav ul {
+.navbar ul {
     display: flex;
     list-style: none;
-    margin-left: 1em;
+    margin-left: 0;
     gap: 1em;
     align-items: center;
 }
 
-nav ul img {
+.navbar ul img {
     height: 50px;
     width: 50px;
     clip-path: ellipse(50% 50%);

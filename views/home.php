@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/styles/home.css">
     <link rel="stylesheet" href="../assets/styles/cases.css">
     <link rel="stylesheet" href="../assets/styles/googleicons.css">
+    <link rel="stylesheet" href="../assets/styles/templates/discussion-modal.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>

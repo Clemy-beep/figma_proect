@@ -1,9 +1,9 @@
 #cases-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    margin: 2em 4em;
+    margin: 1em 4em;
     gap: 2em;
     flex-wrap: wrap;
 }
@@ -144,7 +144,6 @@
 @media(max-width:800px) {
     #cases-container {
         margin: 1em;
-        width: 100%;
     }
     #order-by {
         display: block;
