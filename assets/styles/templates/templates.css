@@ -1,0 +1,143 @@
+/* header */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    margin: -8px;
+    height: 64px;
+    align-items: center;
+    background-color: #03B6F0;
+}
+
+.navbar li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.navbar li a:hover {
+    color: #d3d3d3
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 1em;
+    gap: 1em;
+    align-items: center;
+}
+
+nav ul img {
+    height: 50px;
+    width: 50px;
+    clip-path: ellipse(50% 50%);
+}
+
+#pc_logo,
+#mob_logo {
+    height: 50px;
+    width: 170px;
+    align-self: center;
+}
+
+#mob_logo {
+    display: none;
+}
+
+#btn-add #btn {
+    background-color: #03B6F0;
+    border-radius: 32px;
+    padding: 0.5em;
+    height: 50px;
+    width: fit-content;
+    align-self: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3%;
+    font-size: 17px;
+    border: 2.5px solid white;
+}
+
+#btn-add #btn:hover {
+    border: 3.5px solid white;
+    color: #03B6F0;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/*fin header */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.container-fav {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border: 2.5px solid black;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+@media (max-width: 880px) {
+    #profile {
+        height: 44px;
+        width: 44px;
+    }
+    nav ul {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    button #buttonText {
+        display: none;
+    }
+    button {
+        width: fit-content;
+    }
+    #pc_logo {
+        aspect-ratio: 2/1;
+    }
+}
+
+@media (max-width: 500px) {
+    #pc_logo {
+        display: none;
+    }
+    #mob_logo {
+        display: block;
+        height: 100%;
+        aspect-ratio: 1/1;
+        width: 5em;
+    }
+}
+
+@media(max-width: 420px) {
+    #categories span {
+        display: none;
+    }
+    #categories::after {
+        content: "Categories";
+        font-size: 14px;
+    }
+    #searchInput {
+        width: 60%;
+    }
+}
