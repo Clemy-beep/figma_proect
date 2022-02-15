@@ -123,3 +123,32 @@
     font-weight: bold;
     color: white;
 }
+
+#order-by {
+    margin-left: 2em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-size: 1em;
+    background-image: url("../images/order_by_button.svg");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 0.7em;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+}
+
+@media(max-width:800px) {
+    #cases-container {
+        margin: 1em;
+        width: 100%;
+    }
+    #order-by {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

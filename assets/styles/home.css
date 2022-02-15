@@ -458,21 +458,13 @@
     padding-right: 0.5em;
 }
 
-#order-by {
-    margin-left: 2em;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: transparent;
-    background-size: 1em;
-    background-image: url("../images/order_by_button.svg");
-    background-repeat: no-repeat;
-    background-position-x: 90%;
-    background-position-y: 0.7em;
-    border: 1px solid black;
-    border-radius: 2px;
-    margin-right: 2rem;
-    padding: 1rem;
-    padding-right: 2rem;
+@media(max-width: 1000px) {
+    #carousel {
+        justify-content: space-evenly;
+        margin: 0.5em !important;
+        width: 100%;
+    }
+    #carousel-items {}
 }
 
 @media (max-width:700px) {
