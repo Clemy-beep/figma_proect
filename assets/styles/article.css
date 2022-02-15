@@ -2,6 +2,10 @@
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+#article-title {
+    text-align: center;
+}
+
 #header-bis {
     height: 64px;
     margin: 0 -8px;
@@ -17,7 +21,7 @@
 
 #article-miscs {
     display: flex;
-    margin: 0 20%;
+    margin: 0 30%;
     align-items: center;
     justify-content: space-between;
 }
@@ -43,6 +47,40 @@
     color: white;
 }
 
+#article-date {
+    display: block;
+}
+
+#article-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#article-author-name {
+    font-weight: bold;
+}
+
+#article-author-name-profession {
+    color: #474747;
+}
+
+#article-author-abstract {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 30%;
+    gap: 4em;
+}
+
+#article-resume {
+    text-align: justify;
+    color: #474747;
+}
+
+#article-tags {
+    margin-top: 0.5em;
+}
+
 .tag {
     background-color: #03B6F0;
     color: white;
@@ -52,6 +90,86 @@
     border-radius: 32px;
 }
 
-#article-date {
+#patient-infos {
+    padding: 1em;
+    border-radius: 32px;
+    box-shadow: 0px 0px 4px 1px #00000035;
+    width: fit-content;
+    position: absolute;
+    top: 184px;
+    left: 2em;
+}
+
+#patient-infos ul,
+#patient-infos span {
+    margin: 0;
+    padding: 0.5em;
+    color: #474747;
+}
+
+#patient-infos ul li {
+    margin-left: 1em;
+}
+
+#patient-infos-title {
     display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #474747;
+}
+
+@media(max-width:1200px) {
+    #patient-infos {
+        position: relative;
+        margin: 1em auto;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media(max-width: 1100px) {
+    #article-miscs,
+    #article-author-abstract {
+        margin: 0.5em 20%;
+    }
+    #header-bis #nav-bar-bis {
+        padding: 0
+    }
+}
+
+@media(max-width:820px) {
+    #article-miscs,
+    #article-author-abstract {
+        margin: 0.5em 10%;
+    }
+    #header-bis {
+        font-size: 14px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
+
+@media(max-width:500px) {
+    h1 {
+        font-size: 20px
+    }
+    #header-bis,
+    #article-miscs,
+    #article-author-abstract {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:450px) {
+    #article-author-abstract {
+        flex-direction: column;
+        gap: 1em;
+        align-items: flex-start;
+    }
+    #patient-infos-title {
+        font-size: 15px
+    }
+    #patient-infos {
+        font-size: 12px
+    }
 }
