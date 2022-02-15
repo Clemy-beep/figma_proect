@@ -1,0 +1,135 @@
+:root {
+  --main: #03b6f0;
+  --second: #bae6fa;
+  --white: rgba(255, 250, 250, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  display: flex;
+  gap: 0.5em;
+  margin-left: -20%;
+  margin-bottom: 0.5%;
+}
+.number {
+  color: var(--main);
+}
+.container-comment {
+  height: 40em;
+  width: 45%;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.commentaire {
+  display: flex;
+  gap: 4em;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+h3{
+  cursor: pointer;
+}
+.image {
+  height: 5em;
+  width: 5em;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(196, 196, 196, 1);
+  cursor: pointer;
+}
+.container-user-texte {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 75%;
+}
+.speudo-heure {
+  display: flex;
+  gap: 5%;
+}
+.form-comment {
+  display: flex;
+  margin-top: 10%;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+  background-color: var(--second);
+}
+textarea {
+  width: 50%;
+  font-style: none;
+  border: none;
+  resize: none;
+  background-color: var(--second);
+  padding-top: 5%;
+  padding-left: 5%;
+  border-radius: 0 16px;
+}
+#trombone {
+  font-size: 3em;
+  margin-top: 10%;
+  margin-right: 2%;
+  transform: rotate(50deg);
+  cursor: pointer;
+  width: 4%;
+  display: flex;
+  justify-content: center;
+  height: 1em;
+}
+.send {
+  margin-top: 10%;
+  border: 2px solid rgba(0, 0, 0, 1);
+  height: 2.5em;
+  width: 20%;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  cursor: pointer;
+}
+input[type="submit"]{
+  background-color:#03b5f000;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+#icon-send{
+  font-size: 2em;
+  transform: rotate(-50deg);
+}
+@media (max-width: 1000px){
+  .container-comment{
+    width: 90%;
+  }
+  .container-user-texte {
+    width: 70%;
+  }
+  .speudo-heure{
+    margin-top: 5%;
+  }
+  input[type="submit"]{
+    font-size: 1em;
+  }
+  #icon-send{
+    font-size: 1em;
+    margin-top: 6%;
+  }
+  #trombone {
+    font-size: 1.3em;
+    margin-top: 13%;
+  }
+  .send{
+    width: 35%;
+  }
+}
