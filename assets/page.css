@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+
+/* ---- */
+
+.container-p {
+    margin-top: 20%;
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+}
+
+h3 {
+    background-color: #03B6F0;
+    color: #ffffff;
+    margin-bottom: 3%;
+}
+
+.container-i {
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+}
+
+#main-dent {
+    height: 60%;
+    width: 80%;
+}
+
+#sub-dent {
+    height: 15%;
+    width: 20%;
+}
+
+.container-i p {
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.container-s {
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+}
+
+#scan-dent {
+    height: 40%;
+    width: 80%;
+}
+
+#scan-sub {
+    height: 10%;
+    width: 20%;
+}
+
+.container-s p {
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.container-b {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+}
+
+.container-b p {
+    text-align: justify;
+    margin-left: 4%;
+}
+
+.biopsy {
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-bottom: 1%;
+}
+
+.diagnostic {
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+}
+
+.histo {
+    text-align: justify;
+}
+
+.patho {
+    margin-top: 10%;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-evo {
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+}
+
+.container-evo p {
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.container-c {
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+}
+
+.container-c p {
+    text-align: justify;
+}
+
+button {
+    background-color: #03B6F0;
+    color: white;
+    border-radius: 25px;
+    padding: 5px;
+    margin-top: 5%;
+}

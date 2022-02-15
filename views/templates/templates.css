@@ -202,6 +202,10 @@
         height: auto;
     }
     
+    #etoile:hover {
+        transform: scale(1);
+    }
+    
     .category li {
         list-style: none;
     }
@@ -242,10 +246,12 @@
     h5 {
         font-size: 13px;
         padding: 5%;
+        color: #272625;
     }
     
     h4 {
         font-size: 10px;
+        color: #757D75;
     }
     
     .material-icons.blue {
@@ -259,7 +265,6 @@
     
     span:hover {
         transform: scale(1.5);
-        margin-bottom: 55%;
     }
     
     .chicot:hover {
@@ -292,8 +297,9 @@
             display: flex;
             flex-wrap: wrap;
             margin: auto;
-            height: 100%;
+            height: 95%;
             margin-top: 10%;
+            margin-bottom: 5%;
         }
         .favori:hover {
             transform: scale(0)
